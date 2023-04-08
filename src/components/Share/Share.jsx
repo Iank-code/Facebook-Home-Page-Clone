@@ -1,5 +1,9 @@
 import "./Share.css";
 import PermMediaIcon from "@mui/icons-material/PermMedia";
+import LabelIcon from "@mui/icons-material/Label";
+import LocationOnIcon from "@mui/icons-material/LocationOn";
+import EmojiEmotionsIcon from "@mui/icons-material/EmojiEmotions";
+import HouseIcon from "@mui/icons-material/House";
 
 export default function Share() {
   return (
@@ -9,7 +13,7 @@ export default function Share() {
           <img
             className="shareProfileImg"
             la
-            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT1Y4W0p2sjv51tINa74k7dvc5QnDsO3qJwAQ&usqp=CAU"
+            src="https://images.unsplash.com/photo-1539571696357-5a69c17a67c6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTB8fHBlb3BsZXxlbnwwfHwwfHw%3D&auto=format&fit=crop&w=500&q=60"
             alt=""
           />
 
@@ -19,7 +23,22 @@ export default function Share() {
         <div className="shareBottom">
           <div className="shareOptions">
             <div className="shareOption">
-              <PermMediaIcon />
+              <PermMediaIcon className="shareIcon" />
+              <span className="shareOptionText">Photo or Video</span>
+            </div>
+
+            <div className="shareOption">
+              <LabelIcon className="shareIcon" />
+              <span className="shareOptionText">Photo or Video</span>
+            </div>
+
+            <div className="shareOption">
+              <HouseIcon className="shareIcon" />
+              <span className="shareOptionText">Photo or Video</span>
+            </div>
+
+            <div className="shareOption">
+              <EmojiEmotionsIcon className="shareIcon" />
               <span className="shareOptionText">Photo or Video</span>
             </div>
           </div>
